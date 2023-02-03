@@ -37,3 +37,5 @@ print(heap.max_extract())
 # Print the minimum value
 print(heap.min_extract())
 ```
+
+Copyright (c) 2023, Max Base
