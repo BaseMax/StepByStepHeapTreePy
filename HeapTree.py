@@ -7,11 +7,17 @@
 class HeapTree:
     def __init__(self, array):
         self.array = array
-        self.heapify()
+        self.max_heapify()
     
     def max_heapify(self):
         for i in range(len(self.array)):
             self.max_heapify_index(i)
+    
+    def left(self, index):
+        return 2 * index + 1
+    
+    def right(self, index):
+        return 2 * index + 2
         
     def max_heapify_index(self, index):
         left = self.left(index)
